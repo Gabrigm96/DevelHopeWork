@@ -1,59 +1,51 @@
-package javabasics._3;
+package javabasics._4;
 
 public class Main {
     public static void main(String[] args) {
-        exercise1();
-        exercise2();
-        exercise3();
+
     }
 
     /**
-     * 1: print out your initials using System.out.print and then a char literal,
-     * i.e. 'a', 'b', 'c'. You will need multiple print statements
+     * 1: Store your age in an appropriate variable, print it out in
+     *    one line using the "+" in your print statement. Only use 1 print statement
      */
     private static void exercise1() {
         System.out.println("Exercise 1:");
         // Write your code here
-        System.out.println("G");
-        System.out.println("M");
+        int myAge = 26;
+        System.out.println("Gabriele age is=" + myAge);
     }
 
     /**
-     * 2: Print out your age as an int literal, i.e. 28, then print whether or not you've
-     * had lunch today as a boolean literal i.e. true, false, then print the price of
-     * your lunch as a double, i.e. 4.99
+     * 2: Store your first name initial (i.e. Jane -> J) in a variable, your age in another variable.
+     *
+     *    And then print them out on the same line using the following idea
+     *
+     *    System.out.println("My Age=" + myAge +", my initial=" + myInitial);
      */
     private static void exercise2() {
         System.out.println("\nExercise 2:");
-        // Write your code here
-        System.out.println(26);
-        System.out.println(true);
-        System.out.println(4.99);
+        //Write your code here
+        String myInitial = "G";
+        int myAge = 26;
+        System.out.println("My age=" + myAge +", my initial=" + myInitial);
+
     }
 
     /**
-     * 3: Complete exercise 2, but store the values in a variable.
-     * And then print out the variable.
-     *
-     * i.e.
-     * char favouriteLetter = 'g';
-     * System.out.print("My favourite letter=");
-     * System.out.println(favouriteLetter)
+     * 3: Write comments above each line of code, describing what the line of code is doing
      */
     private static void exercise3() {
         System.out.println("\nExercise 3:");
-        // Write your code here
-        int myAge = 26;
-        System.out.print("my age = ");
-        System.out.println(myAge);
+        // define a variable to know if it has eaten
+        boolean hasEatenLunch = false;
 
-        boolean hasILunchToday = true;
-        System.out.print("I lunch today? = ");
-        System.out.println(hasILunchToday);
+        // define a variable to know cost of lunch
+        double lunchCost = 5.99;
 
-        double lunchPrice = 4.99;
-        System.out.print("My lunch price = ");
-        System.out.println(lunchPrice);
-
+        // print lunch cost with a text message
+        System.out.println("Lunch cost=" + lunchCost);
+        // print if it has eaten with a text message
+        System.out.println("Has Eaten lunch=" + hasEatenLunch);
     }
 }
